@@ -1,1 +1,44 @@
-
+﻿<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="utf-8">
+    <title>Ссылки</title>
+    <meta name="description" content="Motion Capture Components – A-Frame">
+    <script src="js/components/aframe-master.js"></script>
+    <script src="js/components/link-controls.js"></script>
+ </head>
+  <body>
+    <a-scene raycaster="far: 100; objects: [link];" cursor="rayOrigin: mouse" camera-position>
+      <a-assets>
+        <img id="thumb1" crossOrigin="anonymous" src="t1.png">
+        <img id="thumb2" crossOrigin="anonymous" src="t2.png">
+        <img id="thumb3" crossOrigin="anonymous" src="t3.png">
+		<img id="city" crossorigin="anonymous" src="t0_orig.jpg">
+	  </a-assets>
+	  	<a-entity camera look-controls position="0 2 5"></a-entity>
+	
+		<a-plane  position="-7 3 -3" rotation="0 45 0" width="5" height="8" material="color: #000; opacity: 0.8">
+		<a-link href="index1.html" position="0 2.5 0.05" material="shader: flat; opacity: 0.1" ><a-plane src="#thumb1" position="0 0 0" rotation="0 0 0" width="3.6" height="2" ></a-plane></a-link>
+		<a-link href="index2.html" position="0 0 0.05" material="shader: flat; opacity: 0.1" ><a-plane src="#thumb2" position="0 0 0" rotation="0 0 0" width="3.6" height="2"></a-plane></a-link>
+		<a-link href="index3.html" position="0 -2.5 0.05" material="shader: flat; opacity: 0.1" ><a-plane src="#thumb3" position="0 0 0" rotation="0 0 0" width="3.6" height="2"></a-plane></a-link>
+		</a-plane>
+		
+		<a-plane  position="0 3 -5" rotation="0 0 0" width="8" height="8" material="color: #000; opacity: 0.8">
+		<a-text font="calibri" value="Добро пожаловать на главную" color="#ff0" width="10" position="-4 3 0.05"  rotation="0 0 0"></a-text>
+		</a-plane>
+		
+		<a-plane  position="7 3 -3" rotation="0 -45 0" width="5" height="8" material="color: #000; opacity: 0.8">
+		<a-link href="index1.html" position="0 2.5 0.05" material="shader: flat; opacity: 0.1" ><a-plane src="#thumb1" position="0 0 0" rotation="0 0 0" width="3.6" height="2"></a-plane></a-link>
+		<a-link href="index2.html" position="0 0 0.05" material="shader: flat; opacity: 0.1" ><a-plane src="#thumb2" position="0 0 0" rotation="0 0 0" width="3.6" height="2"></a-plane></a-link>
+		<a-link href="index3.html" position="0 -2.5 0.05" material="shader: flat; opacity: 0.1" ><a-plane src="#thumb3" position="0 0 0" rotation="0 0 0" width="3.6" height="2"></a-plane></a-link>
+		</a-plane>
+		
+         
+	  
+	  <a-sky id="image-360" radius="50" src="#city"></a-sky>
+      
+      <a-entity id="leftHand" link-controls="hand: left"></a-entity>
+      <a-entity id="rightHand" link-controls="hand: right"></a-entity>
+    </a-scene>
+  </body>
+</html>
