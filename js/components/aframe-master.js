@@ -68035,7 +68035,7 @@ var DEFAULT_WIDTH = 1;
 var MAX_ANISOTROPY = 16;
 
 var FONT_BASE_URL = 'https://cdn.aframe.io/fonts/';
-var FONT_COR_URL = 'fonts/';
+var FONT_COR_URL = '/fonts/';
 var FONTS = {
   aileronsemibold: FONT_BASE_URL + 'Aileron-Semibold.fnt',
   dejavu: FONT_BASE_URL + 'DejaVu-sdf.fnt',
