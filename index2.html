@@ -17,20 +17,21 @@
 	  </a-assets>
 	  	<a-entity camera look-controls position="0 2 5"></a-entity>
 	
-		<a-plane  position="-7 3 -3" rotation="0 45 0" width="5" height="8" material="color: #000; opacity: 0.8">
-		<a-link href="index.html" position="0 2.5 0.05" material="shader: flat; opacity: 0.1" ><a-plane src="#thumb1" position="0 0 0" rotation="0 0 0" width="3.6" height="2" ></a-plane></a-link>
-		<a-link href="index1.html" position="0 0 0.05" material="shader: flat; opacity: 0.1" ><a-plane src="#thumb2" position="0 0 0" rotation="0 0 0" width="3.6" height="2"></a-plane></a-link>
-		<a-link href="index3.html" position="0 -2.5 0.05" material="shader: flat; opacity: 0.1" ><a-plane src="#thumb3" position="0 0 0" rotation="0 0 0" width="3.6" height="2"></a-plane></a-link>
+		<a-plane  position="-7 3 -3" rotation="0 45 0" width="5" height="9" material="color: #000; opacity: 0.8;side:double">
+		<a-text font="nokia" align="center" color="white"  width="10" position="0 4 0.05"  value="Новые фото" ></a-text>
+		<a-link href="index.html" position="0 2 0.05" material="shader: flat; opacity: 0" link="title:Главная" geometry="primitive: plane"><a-plane src="#thumb1" position="0 0 0" rotation="0 0 0" width="3.6" height="2" ></a-plane></a-link>
+		<a-link href="index1.html" position="0 -0.6 0.05" material="shader: flat; opacity: 0" link="title:Главная" geometry="primitive: plane"><a-plane src="#thumb2" position="0 0 0" rotation="0 0 0" width="3.6" height="2"></a-plane></a-link>
+		<a-link href="index3.html" position="0 -3 0.05" material="shader: flat; opacity: 0" link="title:Главная" geometry="primitive: plane"><a-plane src="#thumb3" position="0 0 0" rotation="0 0 0" width="3.6" height="2"></a-plane></a-link>
 		</a-plane>
-		
 		<a-plane  position="0 3 -5" rotation="0 0 0" width="8" height="8" material="color: #000; opacity: 0.8">
 		<a-text font="calibri" value="тестовая 2" color="#ff0" width="10" position="-4 3 0.05"  rotation="0 0 0"></a-text>
 		</a-plane>
 		
-		<a-plane  position="7 3 -3" rotation="0 -45 0" width="5" height="8" material="color: #000; opacity: 0.8">
-		<a-link href="index.html" position="0 2.5 0.05" material="shader: flat; opacity: 0.1" ><a-plane src="#thumb1" position="0 0 0" rotation="0 0 0" width="3.6" height="2"></a-plane></a-link>
-		<a-link href="index1.html" position="0 0 0.05" material="shader: flat; opacity: 0.1" ><a-plane src="#thumb2" position="0 0 0" rotation="0 0 0" width="3.6" height="2"></a-plane></a-link>
-		<a-link href="index3.html" position="0 -2.5 0.05" material="shader: flat; opacity: 0.1" ><a-plane src="#thumb3" position="0 0 0" rotation="0 0 0" width="3.6" height="2"></a-plane></a-link>
+		<a-plane  position="7 3 -3" rotation="0 -45 0" width="5" height="9" material="color: #000; opacity: 0.8;side:double">
+		<a-text font="nokia" align="center" color="white"  width="10" position="0 4 0.05"  value="Популярные" ></a-text>
+		<a-link href="index.html" position="0 2 0.05" material="shader: flat; opacity: 0" link="title:Главная" geometry="primitive: plane"><a-plane src="#thumb1" position="0 0 0" rotation="0 0 0" width="3.6" height="2"></a-plane></a-link>
+		<a-link href="index1.html" position="0 -0.6 0.05" material="shader: flat; opacity: 0" link="title:Главная" geometry="primitive: plane"><a-plane src="#thumb2" position="0 0 0" rotation="0 0 0" width="3.6" height="2"></a-plane></a-link>
+		<a-link href="index3.html" position="0 -3 0.05" material="shader: flat; opacity: 0" link="title:Главная" geometry="primitive: plane"><a-plane src="#thumb3" position="0 0 0" rotation="0 0 0" width="3.6" height="2"></a-plane></a-link>
 		</a-plane>
 		
          
