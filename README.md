@@ -1,2 +1,2 @@
 # city_gallery
-Gallery
+Components of the photo gallery project
